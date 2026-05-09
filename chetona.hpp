@@ -7,40 +7,41 @@
 #include <string>
 #include <vector>
 
-// Entry and Exit
+// main function starts here
 #define aromvho() int main()
+// exit program
 #define shomapti() return 0
 
-// Variable Declaration
+// make variables
 #define dhoro auto
 #define var auto
 
-// Conditional Logic
+// if else conditions
 #define shorto if
 #define natuva else if
 #define onno_thay else
 
-// Loops
+// loops
 #define ghurnon while
 #define jotokhon for
 
-// Boolean Literals
+// true and false
 #define shotto true
 #define mithya false
 
-// Arithmetic Operations (Functions or Macros)
+// math stuff
 #define shonkolon(a, b) ((a) + (b))
 #define biyojon(a, b) ((a) - (b))
 #define gunon(a, b) ((a) * (b))
 #define vabhon(a, b) ((a) / (b))
 #define mod(a, b) ((a) % (b))
 
-// Comparison
+// compare two things
 #define shomota(a, b) ((a) == (b))
 #define boro(a, b) ((a) > (b))
 #define choto(a, b) ((a) < (b))
 
-// Output
+// print something
 template <typename T> void prodorshon(T value) {
   std::cout << value << std::endl;
 }
