@@ -1,5 +1,7 @@
 # CHETONA - Bengali C++ DSL
 
+[GitHub Repository](https://github.com/ahktek/Chetona-project)
+
 CHETONA is a header-only C++ library that allows you to write C++ code using Bengali keywords. This project is based on the CHETONA project proposal.
 
 ## Features
