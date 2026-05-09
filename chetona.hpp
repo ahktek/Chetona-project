@@ -1,27 +1,21 @@
 #ifndef CHETONA_HPP
 #define CHETONA_HPP
 
+#include <algorithm>
+#include <cmath>
 #include <iostream>
 #include <string>
 #include <vector>
-#include <algorithm>
-#include <cmath>
 
-/**
- * CHETONA (Consciousness) - A Bengali-based DSL Wrapper for C++
- * Based on the CHETONA Project Proposal.
- */
-
-// main function starts here
+// Entry and Exit
 #define aromvho() int main()
-// exit program
 #define shomapti() return 0
 
-// make variables
+// Variable Declaration
 #define dhoro auto
 #define var auto
 
-// if else conditions
+// Conditional Logic
 #define shorto if
 #define natuva else if
 #define onno_thay else
@@ -30,45 +24,41 @@
 #define ghurnon while
 #define jotokhon for
 
-// true and false
+// Boolean Literals
 #define shotto true
 #define mithya false
 
-// math stuff
+// Arithmetic Operations (Functions or Macros)
 #define shonkolon(a, b) ((a) + (b))
 #define biyojon(a, b) ((a) - (b))
 #define gunon(a, b) ((a) * (b))
 #define vabhon(a, b) ((a) / (b))
 #define mod(a, b) ((a) % (b))
 
-// compare two things
+// Comparison
 #define shomota(a, b) ((a) == (b))
 #define boro(a, b) ((a) > (b))
 #define choto(a, b) ((a) < (b))
 
-// print something
-template<typename T>
-void prodorshon(T value) {
-    std::cout << value << std::endl;
+// Output
+template <typename T> void prodorshon(T value) {
+  std::cout << value << std::endl;
 }
 
-// take input from keyboard
-template<typename T>
-void grohon(T& value) {
-    std::cin >> value;
-}
+// Input
+template <typename T> void grohon(T &value) { std::cin >> value; }
 
 // Inline input for convenience
 inline std::string grohon_shobdo() {
-    std::string s;
-    std::cin >> s;
-    return s;
+  std::string s;
+  std::cin >> s;
+  return s;
 }
 
 inline double grohon_shonkhya() {
-    double d;
-    std::cin >> d;
-    return d;
+  double d;
+  std::cin >> d;
+  return d;
 }
 
 #endif // CHETONA_HPP
